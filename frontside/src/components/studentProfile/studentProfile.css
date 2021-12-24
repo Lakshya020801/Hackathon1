@@ -1,0 +1,40 @@
+.main {
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topbar {
+    background-color: rgb(41, 41, 190);
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 50px;
+}
+.topbar a {
+    float: right;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 26px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar {
+    background-color: whitesmoke;
+    color: white;
+    height: 98%;
+}
+.sidebar a {
+    margin-left: 10px;
+    display: block;
+    color: rgb(7, 7, 7);
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.card{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    background-color: whitesmoke;
+}
