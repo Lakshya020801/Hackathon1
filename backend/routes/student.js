@@ -23,4 +23,16 @@ router.get("/",async(req,res)=>{
     }
 });
 
+router.get("/:id",async(req,res)=>{
+    try{
+       const user=await Student.findById(req.params.id);
+       const{password, ...others}=user._doc;
+       res.status(200).json(others);
+    }
+    catch(err)
+    {
+       res.status(404).json(err);
+    }
+});
+
 module.exports=router;

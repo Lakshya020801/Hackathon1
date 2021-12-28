@@ -6,6 +6,7 @@ const helmet=require("helmet");
 const morgan=require("morgan");
 const authRoute=require("./routes/auth");
 const studentRoute=require("./routes/student");
+const courseRoute=require("./routes/course");
 const bcrypt=require("bcrypt");
 
 dotenv.config();
@@ -20,6 +21,7 @@ app.use(morgan("common"));
 
 app.use("/api/auth",authRoute);
 app.use("/api/student",studentRoute);
+app.use("/api/course",courseRoute);
 
 
 app.listen(8800,()=>{
