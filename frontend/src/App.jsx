@@ -2,6 +2,7 @@ import StudentLogin from "./components/Student/StudentLogin";
 import Navbar from "./components/Navbar/TopBar";
 import CourseList from "./pages/CourseList/CourseList";
 import StudentList from "./pages/StudentList/StudentList";
+import Messenger from "./pages/messenger/Messenger";
 import MentorProfile from "./components/MentorProfile/Studentprofile";
 import StudentProfile from "./components/StudentProfile/Studentprofile";
 import { useContext } from "react";
@@ -23,6 +24,7 @@ function App() {
   {user ? (<Route path="/course" element={<CourseList/>} />) : (<Route path="/course" element={<Navigate to="/login" />}/>) }
   {user ? (<Route path="/Studentprofile" element={<StudentProfile/>} />) : (<Route path="/Studentprofile" element={<Navigate to="/login" />}/>) }
   {user ? (<Route path="/profile/:id" element={<MentorProfile/>} />) : (<Route path="/profile:id" element={<Navigate to="/login" />}/>) }
+  {user ? (<Route path="/messenger/:id" element={<Messenger/>} />) : (<Route path="/messenger:id" element={<Navigate to="/login" />}/>) }
    </Routes>
   <div className="outer">
   <div className="inner">

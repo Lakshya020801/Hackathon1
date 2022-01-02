@@ -1,7 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router";
+import { useParams} from "react-router";
+import { Link } from "react-router-dom"
 import "./studentprofile.css"
 
 export default function Studentprofile() {
@@ -121,6 +122,9 @@ export default function Studentprofile() {
                     </div>
                 </div>
             </div>
+            <Link to={`/messenger/${id}`}>
+            <button type="button" class="btn btn-info">Chat</button>
+            </Link>
         </div>
     </div>
     )
