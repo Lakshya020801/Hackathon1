@@ -16,7 +16,6 @@ export default function Studentprofile() {
       };
       fetchPosts();
     }, [id]);
-
     return (
             <div className="container">
         <div className="main">
@@ -124,6 +123,13 @@ export default function Studentprofile() {
             </div>
             <Link to={`/messenger/${id}`}>
             <button type="button" class="btn btn-info">Chat</button>
+            </Link>
+            <br/>
+            <br/>
+            
+            
+            <Link to="/video">
+            <button type="button" class="btn btn-info">Video Chat</button>
             </Link>
         </div>
     </div>
